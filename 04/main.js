@@ -11,7 +11,7 @@ function initScene() {
 
     const mesh = new THREE.Mesh(box, material);
     // mesh.geometry.scale(1, 1, -1);
-    box.scale(1, 1, -1);
+    box.scale(1.5, 1.5, -1.5);
     scene.position.set(0, 0, 0);
     scene.add(mesh);
     scene.add(axes);
@@ -29,7 +29,7 @@ function genMatterial() {
     return resource.map((filename) => {
         const map = new THREE.TextureLoader().load(`./image/${filename}`);
         map.needsUpdate = true;
-        return new THREE.MeshBasicMaterial({ map });
+        return new THREE.MeshBasicMaterial({ map, side: THREE.DoubleSide });
     })
 } 
 
