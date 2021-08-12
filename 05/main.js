@@ -9,7 +9,7 @@ const textureLoader = new THREE.TextureLoader();
 const clock = new THREE.Clock();
 
 const scene = new THREE.Scene();
-const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas') });
+const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas'), antialias: true });
 // const camera = new THREE.OrthographicCamera(-2, 2, 2, -2, 0.1, 1000);
 const camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 1000);
 
