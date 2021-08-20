@@ -69,7 +69,6 @@ document.getElementById('begin').addEventListener('click', function() {
     rotate('z', 1);
     rotate('z', 2);
     rotate('z', 3);
-    // rubik.rotateY(Math.PI / 4)
 });
 
 function rotate(d, n) {
