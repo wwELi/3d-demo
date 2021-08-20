@@ -61,13 +61,13 @@ function render() {
 }
 
 document.getElementById('begin').addEventListener('click', function() {
-    // rotate('y', 2);
-    // rotate('y', 2);
-    // rotate('x', 3);
-    // rotate('x', 3);
-    // rotate('x', 1);
-    // rotate('z', 1);
-    // rotate('z', 2);
+    rotate('y', 2);
+    rotate('y', 2);
+    rotate('x', 3);
+    rotate('x', 3);
+    rotate('x', 1);
+    rotate('z', 1);
+    rotate('z', 2);
     rotate('z', 3);
     // rubik.rotateY(Math.PI / 4)
 });
