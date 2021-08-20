@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #begin {
+            width: 100px;
+            height: 40px;
+            position: fixed;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="begin">begin</button>
+</body>
+<script src="../three.js-master/build/three.js"></script>
+<script src="./main.js"></script>
+<script type="module">
+    import { OrbitControls } from '../three.js-master/examples/jsm/controls/OrbitControls.js';
+    THREE.OrbitControls = OrbitControls;
+</script>
+</html>
